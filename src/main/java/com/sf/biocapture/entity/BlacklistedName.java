@@ -6,12 +6,13 @@ import javax.persistence.Table;
 
 import org.hibernate.envers.Audited;
 
-import nw.orm.core.IEntity;
+import com.sf.biocapture.entity.base.BaseEntityPK;
+
 
 @Audited
 @Entity
 @Table(name="blacklisted_name")
-public class BlacklistedName extends IEntity{
+public class BlacklistedName extends BaseEntityPK{
 
 	private static final long serialVersionUID = 6699275784656763035L;
 	

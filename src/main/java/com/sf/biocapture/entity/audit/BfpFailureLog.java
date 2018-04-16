@@ -7,12 +7,13 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
-import nw.orm.core.IEntity;
+import com.sf.biocapture.entity.base.BaseEntityPK;
+
 
 //@Audited
 @Entity
 @Table(name = "BFP_FAILURE_LOG")
-public class BfpFailureLog extends IEntity {
+public class BfpFailureLog extends BaseEntityPK {
 
     private static final long serialVersionUID = 176868186839871543L;
 

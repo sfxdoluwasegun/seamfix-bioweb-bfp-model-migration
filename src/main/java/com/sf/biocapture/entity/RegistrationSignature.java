@@ -5,6 +5,7 @@
  */
 package com.sf.biocapture.entity;
 
+import com.sf.biocapture.entity.base.BaseEntityPK;
 import com.sf.biocapture.entity.enums.FingersEnum;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -14,7 +15,6 @@ import javax.persistence.JoinColumn;
 import javax.persistence.Lob;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
-import nw.orm.core.IEntity;
 
 /**
  *
@@ -23,7 +23,7 @@ import nw.orm.core.IEntity;
  */
 @Entity
 @Table(name = "REGISTRATION_SIGNATURE")
-public class RegistrationSignature extends IEntity {
+public class RegistrationSignature extends BaseEntityPK {
 
     private static final long serialVersionUID = 4324319610622971811L;
 

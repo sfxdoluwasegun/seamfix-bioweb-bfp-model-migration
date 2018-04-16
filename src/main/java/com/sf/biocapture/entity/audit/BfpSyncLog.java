@@ -6,6 +6,7 @@
 package com.sf.biocapture.entity.audit;
 
 import com.sf.biocapture.entity.EnrollmentRef;
+import com.sf.biocapture.entity.base.BaseEntityPK;
 import com.sf.biocapture.entity.enums.ActivationStatusEnum;
 import com.sf.biocapture.entity.enums.BfpSyncStatusEnum;
 import java.util.Date;
@@ -19,7 +20,6 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
-import nw.orm.core.IEntity;
 
 /**
  *
@@ -28,7 +28,7 @@ import nw.orm.core.IEntity;
  */
 @Entity
 @Table(name = "BFP_SYNC_LOG")
-public class BfpSyncLog extends IEntity {
+public class BfpSyncLog extends BaseEntityPK{
 
     private static final long serialVersionUID = -4324319610622971809L;
 
